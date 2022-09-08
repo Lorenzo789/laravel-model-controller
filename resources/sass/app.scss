@@ -1,1 +1,48 @@
 //
+@import './partials/general';
+
+
+//general classes
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+//start header
+header{
+    background-color: black;
+    padding: 15px;
+
+    ul{
+        list-style: none;
+
+        a{
+            color: white;
+            padding: 0px 15px;
+
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}
+//end header
+
+//start section home.blade
+section{
+    background-color: #E0FFFF;
+    padding: 15px;
+    height: calc(100vh - 50px);
+
+    div.container{
+        text-align: center;
+
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+//end section home.blade
