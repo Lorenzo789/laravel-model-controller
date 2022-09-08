@@ -2,16 +2,16 @@
 @import './partials/general';
 
 
-//general classes
+// ^ general classes ^ //
 .container{
     width: 1200px;
     margin: 0 auto;
 }
+// ^ general classes ^ //
 
 
 
-
-//start header
+// * start header * //
 header{
     background-color: black;
     padding: 15px;
@@ -29,13 +29,13 @@ header{
         }
     }
 }
-//end header
+// * end header * //
 
-//start section home.blade
+// ? start section home.blade ? //
 section{
     background-color: #E0FFFF;
     padding: 15px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 96px);
 
     div.container{
         text-align: center;
@@ -45,4 +45,34 @@ section{
         }
     }
 }
-//end section home.blade
+// ? end section home.blade ? //
+
+// ! start section movie.blade ! //
+section.movie-container{
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    div.container{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div.card{
+            width: calc(100% / 6);
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+    }
+}
+// ! end section movie.blade ! //
+
+// & start footer & //
+footer{
+    background-color: black;
+    padding: 15px;
+    color: white;
+}

@@ -1,16 +1,19 @@
 @extends('layouts.main')
 
 @section('main-content')
-    <div>
-        <ul>
+    <section class="movie-container">
+        <div class="container">
             @forelse ($movies as $movie )
-                <li>
-                    {{ $movie->title }}
-                </li>
+                <div class="card">
+                    <h2>{{ $movie->title }}</h2>
+                    <pre> Date: {{ $movie->date }}</pre>
+                    <pre> Nationality: {{ $movie->nationality }}</pre>
+                    <pre> Original Title:{{ $movie->original_title }}</pre>
+                    <pre> Vote: {{ $movie->vote }}</pre>
+                </div>
             @empty
                 <h3>NON CI SONO FILM</h3>
-                
             @endforelse
-        </ul>
-    </div>
+        </div>
+    </section>
 @endsection
